@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery file browser</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" href="listview.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="listing.js"></script>
+	<script src="imgviewer.js"></script>
+</head>
+<body>
+<div data-role="page" data-theme="b" id="listing-page" class="my-page">
+
+	<div data-role="header">
+		<h1 id="path">Folder: /</h1>
+		<!--<a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext" data-rel="back" data-ajax="false">Back</a> -->
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+
+        <ul data-role="listview" data-inset="true" id="lstListing">
+          
+        </ul>
+
+    </div><!-- /content -->
+</div><!-- /page -->
+
+
+<div data-role="page" class="photopopup" id="image-page">
+  <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+  <img id="theImage" class="popphoto" />
+</div>
+
+</body>
+</html>
